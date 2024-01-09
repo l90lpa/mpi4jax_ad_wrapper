@@ -1,0 +1,29 @@
+[project]
+name = "mpi4jax_ad_wrapper"
+version = "1.0.0"
+authors = [{ name="Liam Adams" },]
+description = "A differentiable wrapper on mpi4jax."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+  "jax==0.4.20",
+  "jaxlib==0.4.20",
+  "mpi4jax==0.4.0.post1",
+]
+
+[project.urls]
+Homepage = "https://github.com/l90lpa/mpi4jax_ad_wrapper"
+Issues = "https://github.com/l90lpa/mpi4jax_ad_wrapper/issues"
+
+[build-system]
+requires = [
+  "hatchling"
+]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests",]
